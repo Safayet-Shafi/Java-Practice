@@ -15,6 +15,10 @@ public class Main {
 
         inheritance2 in2 =new inheritance2();
         in2.print1();
+
+        Encapsulation enc = new Encapsulation();
+        enc.setName("Safayet");
+        System.out.println("enc.getName() = " + enc.getName());
     }
 
 
