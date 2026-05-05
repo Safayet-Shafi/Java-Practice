@@ -13,8 +13,15 @@ public class Main {
 //        int num =sc.nextInt();
 //        System.out.println("num = " + num);
 
-        inheritance2 in2 =new inheritance2();
-        in2.print1();
+//        inheritance2 in2 =new inheritance2();
+//        in2.print1();
+
+        Generic<String> generic1 = new Generic<String>();
+        Generic<Integer> generic2 = new Generic<Integer>();
+        generic1.setValue("Hello");
+        generic2.setValue(100);
+        System.out.println("generic1.getValue() = " + generic1.getValue());
+        System.out.println("generic2.getValue() = " + generic2.getValue());
     }
 
 
