@@ -13,12 +13,22 @@ public class Main {
 //        int num =sc.nextInt();
 //        System.out.println("num = " + num);
 
-        inheritance2 in2 =new inheritance2();
-        in2.print1();
+//        inheritance2 in2 =new inheritance2();
+//        in2.print1();
+//
+//        Encapsulation enc = new Encapsulation();
+//        enc.setName("Safayet");
+//        System.out.println("enc.getName() = " + enc.getName());
+//
+//        String s = "Java,Python,C++";
+//
+//        String[] arr = s.split(",");
+//        for (String lang : arr) {
+//            System.out.println(lang);
+//        }
 
-        Encapsulation enc = new Encapsulation();
-        enc.setName("Safayet");
-        System.out.println("enc.getName() = " + enc.getName());
+        List list =new List();
+        list.learlingArrayList();
     }
 
 
