@@ -3,6 +3,8 @@ import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.Scanner;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class Main {
     public static void main(String[] args) throws Exception {
@@ -39,26 +41,32 @@ public class Main {
 //        list.learlingArrayList();
 
 
-        try {
-            Student s1 = new Student(101, "Safayet");
-            FileOutputStream file = new FileOutputStream("student.txt");
-            ObjectOutputStream out = new ObjectOutputStream(file);
-            out.writeObject(s1);
-            out.close();
-            file.close();
-        } catch (Exception e) {
-            System.out.println(e);
-        }
-        try {
-            FileInputStream file = new FileInputStream("student.txt");
-            ObjectInputStream in = new ObjectInputStream(file);
-            Student s = (Student) in.readObject();
-            in.close();
-            file.close();
-            System.out.println(s.id + " " + s.name);
-        } catch (Exception e) {
-            System.out.println(e);
-        }
+//        try {
+//            Student s1 = new Student(101, "Safayet");
+//            FileOutputStream file = new FileOutputStream("student.txt");
+//            ObjectOutputStream out = new ObjectOutputStream(file);
+//            out.writeObject(s1);
+//            out.close();
+//            file.close();
+//        } catch (Exception e) {
+//            System.out.println(e);
+//        }
+//        try {
+//            FileInputStream file = new FileInputStream("student.txt");
+//            ObjectInputStream in = new ObjectInputStream(file);
+//            Student s = (Student) in.readObject();
+//            in.close();
+//            file.close();
+//            System.out.println(s.id + " " + s.name);
+//        } catch (Exception e) {
+//            System.out.println(e);
+//        }
+
+//        MultiThread mt = new MultiThread();
+//        mt.start();
+
+
+
     }
 
 
